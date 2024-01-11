@@ -32,7 +32,7 @@ const Button: React.FC<TButtonProps> = ({
           className={twMerge(
             `w-full h-[48px] px-4 gap-2 flex items-center justify-center bg-primary ${
               disabled ? "opacity-30" : ""
-            } text-white font-semibold rounded-lg whitespace-nowrap bg-secondaryBlue`,
+            } text-white hover:opacity-80 font-semibold rounded-lg whitespace-nowrap bg-secondaryBlue`,
             className
           )}
           onClick={onClick}
