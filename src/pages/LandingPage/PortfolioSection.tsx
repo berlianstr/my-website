@@ -35,18 +35,22 @@ export default function PortfolioSection() {
               <Tag title="React" />
               <Tag title="Tailwind CSS" />
             </div>
-            <div className="flex ">
+            <div className="flex gap-3">
               <div className="relative h-14 w-20">
-                <Button
-                  label="Demo"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href="https://radx.sg/"
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Demo
+                </a>
               </div>
               <div className="relative h-14 w-20">
-                <Button
-                  label="Source"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href=""
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Source
+                </a>
               </div>
             </div>
           </div>
@@ -67,18 +71,22 @@ export default function PortfolioSection() {
               <Tag title="Tailwind CSS" />
               <Tag title="Vite" />
             </div>
-            <div className="flex ">
+            <div className="flex gap-3 ">
               <div className="relative h-14 w-20">
-                <Button
-                  label="Demo"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href="https://react-vite-film.netlify.app/"
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Demo
+                </a>
               </div>
               <div className="relative h-14 w-20">
-                <Button
-                  label="Source"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href="https://github.com/berlianstr/react-vite-movie"
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Source
+                </a>
               </div>
             </div>
           </div>
@@ -97,22 +105,22 @@ export default function PortfolioSection() {
               <Tag title="Redux" />
               <Tag title="Vonage" />
             </div>
-            {/* <div className="grid grid-cols-2  place-items-end gap-2 ">
-            <Button label="Demo" className="h-10 w-auto rounded-md text-sm" />
-            <Button label="Source" className="h-10 w-auto rounded-md text-sm" />
-          </div> */}
-            <div className="flex ">
+            <div className="flex gap-3">
               <div className="relative h-14 w-20">
-                <Button
-                  label="Demo"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href="https://webinar.analogdevices.events/"
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Demo
+                </a>
               </div>
               <div className="relative h-14 w-20">
-                <Button
-                  label="Source"
-                  className="absolute bottom-0 left-0 h-10 w-auto rounded-md text-sm"
-                />
+                <a
+                  href=""
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Source
+                </a>
               </div>
             </div>
           </div>
