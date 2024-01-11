@@ -6,7 +6,7 @@ import WorkExperienceSection from "./WorkExperienceSection";
 
 export default function LandingPage() {
   return (
-    <div className="mt-11 px-[134px] flex flex-col gap-32">
+    <div className="mt-11 lg:px-[134px] md:px-20 px-7 flex flex-col  overflow-hidden">
       <HeroSection />
       {/* <AboutSection /> */}
       <AdditionalPassions />
