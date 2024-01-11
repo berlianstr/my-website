@@ -3,7 +3,6 @@ import radxImg from "@assets/images/png/radx.png";
 import filmImg from "@assets/images/png/film.png";
 import adiImg from "@assets/images/png/adi.png";
 import Tag from "@components/Tag";
-import Button from "@components/Button/Button";
 import { Element } from "react-scroll";
 import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
