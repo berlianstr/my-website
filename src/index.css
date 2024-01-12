@@ -9,3 +9,35 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+/* .contents {
+  padding: 0px 30px;
+  background-color: r;
+  border-left: 2px solid red;
+} */
+
+.contents .box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+  /* margin-bottom: 20px; */
+}
+.contents .box:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+
+/* .contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  border-color: #11a372;
+  border: 2px solid red;
+} */

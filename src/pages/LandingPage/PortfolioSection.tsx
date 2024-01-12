@@ -6,6 +6,7 @@ import Tag from "@components/Tag";
 import { Element } from "react-scroll";
 import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
+import ContainerCard from "@components/Cards/ContainerCard";
 
 export default function PortfolioSection() {
   const hooks = useGlobalHooks();
@@ -18,7 +19,7 @@ export default function PortfolioSection() {
       >
         <TextTitleSection title1="My" title2="Portfolio" />
         <div className="flex md:flex-nowrap flex-wrap flex-grow gap-4">
-          <div className="flex flex-col gap-2 bg-secondaryWhite p-4 border-2 border-secondaryBlue rounded-md shadow-md  ">
+          <ContainerCard className="p-4">
             <img src={radxImg} className="w-fit" alt="radx" />
             <div>
               <label className="font-semibold text-textBlue">
@@ -52,8 +53,8 @@ export default function PortfolioSection() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="bg-secondaryWhite p-4 border-2 border-secondaryBlue rounded-md shadow-md">
+          </ContainerCard>
+          <ContainerCard className="p-4">
             <img src={filmImg} className="w-fit" alt="film" />
             <div className="mt-2">
               <label className="font-semibold text-textBlue">
@@ -88,8 +89,8 @@ export default function PortfolioSection() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="bg-secondaryWhite p-4 border-2 border-secondaryBlue rounded-md shadow-md">
+          </ContainerCard>
+          <ContainerCard className="p-4">
             <img src={adiImg} className="w-fit" alt="adi" />
             <div className="mt-2">
               <label className="font-semibold text-textBlue">ADI Website</label>
@@ -122,7 +123,7 @@ export default function PortfolioSection() {
                 </a>
               </div>
             </div>
-          </div>
+          </ContainerCard>
         </div>
       </motion.div>
     </Element>
