@@ -1,14 +1,14 @@
 import HeroImg from "@assets/images/svg/hero-img.svg";
 import BlueCircle from "@components/BlueCircle";
-import useGlobalHooks from "@hooks/GlobalHooks";
 // import useGlobalHooks from "@hooks/GlobalHooks";
-import { motion } from "framer-motion";
+// import useGlobalHooks from "@hooks/GlobalHooks";
+// import { motion } from "framer-motion";
 export default function HeroSection() {
-  const hooks = useGlobalHooks();
+  // const hooks = useGlobalHooks();
   return (
-    <motion.div
-      style={{ scale: hooks.scrollYProgress, opacity: hooks.scrollYProgress }}
-      ref={hooks.ref}
+    <div
+      // style={{ scale: hooks.scrollYProgress, opacity: hooks.scrollYProgress }}
+      // ref={hooks.ref}
       className="flex md:flex-row  flex-col-reverse md:justify-between justify-center gap-16 mt-20"
     >
       <div className="flex flex-col md:gap-8 gap-2">
@@ -28,6 +28,6 @@ export default function HeroSection() {
       <div className="flex justify-center">
         <img src={HeroImg} className=" md:w-full w-[80%]" alt="hero-pic" />
       </div>
-    </motion.div>
+    </div>
   );
 }
