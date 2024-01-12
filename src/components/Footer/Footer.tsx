@@ -37,6 +37,20 @@ export default function Footer() {
               </a>
               <a
                 onClick={() =>
+                  scroller.scrollTo("education", {
+                    duration: 1200,
+                    delay: 50,
+                    smooth: true,
+                    // containerId: "ContainerElementID",
+                    offset: -150, // Scrolls to element + 50 pixels down the page
+                  })
+                }
+                className="text-secondaryWhite cursor-pointer"
+              >
+                Education
+              </a>
+              <a
+                onClick={() =>
                   scroller.scrollTo("experience", {
                     duration: 1200,
                     delay: 50,

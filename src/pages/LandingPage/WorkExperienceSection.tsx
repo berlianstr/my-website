@@ -1,4 +1,5 @@
 import BlueCircle from "@components/BlueCircle";
+import ContainerCard from "@components/Cards/ContainerCard";
 import TextTitleSection from "@components/TextTitleSection";
 import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
@@ -18,7 +19,7 @@ export default function WorkExperienceSection() {
         </div>
         <TextTitleSection title1="My" title2="Experience" />
         <div className="flex flex-grow  md:flex-nowrap flex-wrap gap-5">
-          <div className="flex flex-col gap-2 border-2 border-secondaryBlue rounded-md p-5 w-fit">
+          <ContainerCard className="w-fit">
             <label className="font-semibold text-xl">
               Frontend Developer at RadX Group
             </label>
@@ -41,8 +42,8 @@ export default function WorkExperienceSection() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="flex flex-col gap-2 border-2 border-secondaryBlue rounded-md p-5 w-fit">
+          </ContainerCard>
+          <ContainerCard className="w-fit">
             <label className="font-semibold text-xl">
               Frontend Developer at Ragdalion
             </label>
@@ -65,7 +66,7 @@ export default function WorkExperienceSection() {
                 </li>
               </ul>
             </div>
-          </div>
+          </ContainerCard>
         </div>
         <div className="flex justify-end">
           <BlueCircle />

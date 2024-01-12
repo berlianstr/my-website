@@ -8,7 +8,7 @@ export default {
         secondaryWhite: "#FFFFFF",
         primaryBlue: "#002265",
         textBlue: "#082032",
-        secondaryBlue: "#14279B",
+        // secondaryBlue: "#14279B",
         primaryBlack: "#000000",
         secondaryBlue: "#608AF5",
       },

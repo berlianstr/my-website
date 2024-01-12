@@ -2,8 +2,8 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 interface TextTitleSectionProps {
-  title1: string;
-  title2: string;
+  title1?: string;
+  title2?: string;
   classNameTitle1?: string;
   classNameTitle2?: string;
 }

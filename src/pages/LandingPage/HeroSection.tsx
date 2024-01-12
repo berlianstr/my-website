@@ -6,11 +6,7 @@ import BlueCircle from "@components/BlueCircle";
 export default function HeroSection() {
   // const hooks = useGlobalHooks();
   return (
-    <div
-      // style={{ scale: hooks.scrollYProgress, opacity: hooks.scrollYProgress }}
-      // ref={hooks.ref}
-      className="flex md:flex-row  flex-col-reverse md:justify-between justify-center gap-16 mt-20"
-    >
+    <div className="flex md:flex-row  flex-col-reverse md:justify-between justify-center gap-16 mt-20">
       <div className="flex flex-col md:gap-8 gap-2">
         <BlueCircle className="ml-32" />
         <p className="text-start lg:text-[35px] md:text-3xl text-2xl text-primaryBlue tracking-wider">
