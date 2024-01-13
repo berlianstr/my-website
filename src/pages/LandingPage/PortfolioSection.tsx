@@ -7,8 +7,13 @@ import { Element } from "react-scroll";
 import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
 import ContainerCard from "@components/Cards/ContainerCard";
+import useLandingPageViewModel from "./LandingPageViewModel";
 
-export default function PortfolioSection() {
+export default function PortfolioSection({
+  model,
+}: {
+  model: ReturnType<typeof useLandingPageViewModel>;
+}) {
   const hooks = useGlobalHooks();
   return (
     <Element name="portfolio">
@@ -23,17 +28,16 @@ export default function PortfolioSection() {
             <img src={radxImg} className="w-fit" alt="radx" />
             <div>
               <label className="font-semibold text-textBlue">
-                RadX Website
+                {model.dataUser?.portfolio[0]?.name}
               </label>
               <p className="text-sm">
-                This is the website of one of the Singaporean companies where I
-                worked. This is a website created using React JS, Tailwind CSS,
-                and others.
+                {model.dataUser?.portfolio[0]?.description}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              <Tag title="React" />
-              <Tag title="Tailwind CSS" />
+              {model.dataUser?.portfolio[0]?.tag.map((item, index) => (
+                <Tag title={item} key={index} />
+              ))}
             </div>
             <div className="flex gap-3">
               <div className="relative h-14 w-20">
@@ -104,6 +108,7 @@ export default function PortfolioSection() {
               <Tag title="Ant Design" />
               <Tag title="Redux" />
               <Tag title="Vonage" />
+              <Tag title="Firebase" />
             </div>
             <div className="flex gap-3">
               <div className="relative h-14 w-20">

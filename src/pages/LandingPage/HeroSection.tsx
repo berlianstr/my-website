@@ -1,10 +1,14 @@
 import HeroImg from "@assets/images/svg/hero-img.svg";
 import BlueCircle from "@components/BlueCircle";
+import useLandingPageViewModel from "./LandingPageViewModel";
 // import useGlobalHooks from "@hooks/GlobalHooks";
 // import useGlobalHooks from "@hooks/GlobalHooks";
 // import { motion } from "framer-motion";
-export default function HeroSection() {
-  // const hooks = useGlobalHooks();
+export default function HeroSection({
+  model,
+}: {
+  model: ReturnType<typeof useLandingPageViewModel>;
+}) {
   return (
     <div className="flex md:flex-row  flex-col-reverse md:justify-between justify-center gap-16 mt-20">
       <div className="flex flex-col md:gap-8 gap-2">
@@ -12,7 +16,7 @@ export default function HeroSection() {
         <p className="text-start lg:text-[35px] md:text-3xl text-2xl text-primaryBlue tracking-wider">
           Hi ! <br />
           <span className="font-semibold lg:text-[50px] md:text-3xl text-2xl tracking-wider">
-            I’m Berlian Gymnastiar. <br /> a Front-End Developer
+            {model.dataUser?.name} <br /> a Front-End Developer
           </span>
         </p>
         <p className="text-textBlue lg:text-[23px] md:text-lg text-sm">

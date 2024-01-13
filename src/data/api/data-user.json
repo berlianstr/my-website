@@ -1,0 +1,105 @@
+{
+  "name": "Berlian Gymnastiar",
+  "phone": "085894775579",
+  "email": "berliangymnastiar@gmail.com",
+  "experience": [
+    {
+      "startDate": "12-01-2021",
+      "endDate": "06-01-2023",
+      "role": "Frontend Developer",
+      "company": "RadX Group",
+      "description": "",
+      "listJobDetails": [
+        "Creating or developing web and mobile applications using JavaScript, particularly utilizing React.js for web-based applications and React Native for mobile-based applications.",
+        "Maintenance and update web-application.",
+        "Debugging and troubleshooting applications in case of issues or errors."
+      ]
+    },
+    {
+      "startDate": "07-01-2023",
+      "endDate": "02-01-2024",
+      "role": "Frontend Developer",
+      "company": "RadX Group",
+      "description": "",
+      "listJobDetails": [
+        "Creating and maintenance web applications such web-admin, web-monitoring, and landing page with ReactJs, NextJs, and Typescript.",
+        "Collaborating with team Design and Backend developer to create applications.",
+        "Creating a web application in a clean code."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "startDate": "2018",
+      "endDate": "2021",
+      "major": "High School Degree's",
+      "schoolName": "SMKN 12 Jakarta",
+      "location": "Indonesia",
+      "description": [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem reiciendis odio consectetur laborum animi repellendus mollitia! Excepturi veritatis fugit amet omnis doloribus, sunt nisi, ab quisquam in velit obcaecati consequatur."
+      ]
+    },
+    {
+      "startDate": "2021",
+      "endDate": "2021",
+      "major": "Fullstack Mobile Developer",
+      "schoolName": "Fazztrack",
+      "location": "Indonesia",
+      "description": [
+        "Studying and creating web and mobile programming with the JavaScript language and JavaScript frameworks.",
+        "Creating web and mobile applications such as Vehicle Rental and Education App, using React.js, React Native, Node.js, and Express.js, along with Socket.IO for real-time chat feature."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "stacks": ["React JS", "React Native", "Tailwind", "Bootstrap", "etc"],
+      "icon": ""
+    },
+    {
+      "name": "Backend",
+      "stacks": ["Node JS", "Express JS"]
+    }
+  ],
+  "certificate": [],
+  "portfolio": [
+    {
+      "startDate": "2023",
+      "endDate": "2023",
+      "name": "RadX Group's Website",
+      "description": "This is the website of one of the Singaporean companies where I worked. This is a website created using React JS, Tailwind CSS, and others.",
+      "imageUrl": "",
+      "linkUrl": "https://radx.sg/",
+      "linkGithub": "",
+      "tag": ["React", "Tailwind CSS"]
+    },
+    {
+      "startDate": "2023",
+      "endDate": "2023",
+      "name": "Film.Id Website",
+      "description": "This website allow to user to search movies they want to know about. They also can view the rating, and the who are the actors in the film.",
+      "imageUrl": "",
+      "linkUrl": "https://react-vite-film.netlify.app/",
+      "linkGithub": "https://github.com/berlianstr/react-vite-movie",
+      "tag": ["React", "Tailwind CSS", "Vite"]
+    },
+    {
+      "startDate": "2023",
+      "endDate": "2023",
+      "name": "ADI Event Management",
+      "description": "This website allow to users to conduct streaming webinars.",
+      "imageUrl": "",
+      "linkUrl": "https://webinar.analogdevices.events/",
+      "linkGithub": "",
+      "tag": [
+        "React",
+        "Tailwind CSS",
+        "Ant Design",
+        "Redux",
+        "Vonage",
+        "Firebase"
+      ]
+    }
+  ]
+}
