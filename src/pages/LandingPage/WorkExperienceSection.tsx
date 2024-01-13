@@ -1,16 +1,25 @@
 import BlueCircle from "@components/BlueCircle";
 import ContainerCard from "@components/Cards/ContainerCard";
 import TextTitleSection from "@components/TextTitleSection";
-import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
 import { Element } from "react-scroll";
+import useLandingPageViewModel from "./LandingPageViewModel";
+import useGlobalHooks from "@hooks/GlobalHooks";
+import moment from "moment";
 
-export default function WorkExperienceSection() {
+export default function WorkExperienceSection({
+  model,
+}: {
+  model: ReturnType<typeof useLandingPageViewModel>;
+}) {
   const hooks = useGlobalHooks();
   return (
     <Element name="experience">
       <motion.div
-        style={{ scale: hooks.scaleProgress, opacity: hooks.opacityProgress }}
+        style={{
+          scale: hooks.scaleProgress,
+          opacity: hooks.opacityProgress,
+        }}
         ref={hooks.ref}
         className="flex flex-col gap-[60px]"
       >
@@ -19,54 +28,24 @@ export default function WorkExperienceSection() {
         </div>
         <TextTitleSection title1="My" title2="Experience" />
         <div className="flex flex-grow  md:flex-nowrap flex-wrap gap-5">
-          <ContainerCard className="w-fit">
-            <label className="font-semibold text-xl">
-              Frontend Developer at RadX Group
-            </label>
-            <div className="bg-secondaryBlue w-fit text-white rounded-md h-auto p-2 text-sm">
-              December 2021 – June 2023
-            </div>
-            <div>
-              <ul>
-                <li className="text-sm mb-1">
-                  • Creating or developing web and mobile applications using
-                  JavaScript, particularly utilizing React.js for web-based
-                  applications and React Native for mobile-based applications.
-                </li>
-                <li className="text-sm mb-1">
-                  • Maintenance and update web-application
-                </li>
-                <li className="text-sm mb-1">
-                  • Debugging and troubleshooting applications in case of issues
-                  or errors.
-                </li>
-              </ul>
-            </div>
-          </ContainerCard>
-          <ContainerCard className="w-fit">
-            <label className="font-semibold text-xl">
-              Frontend Developer at Ragdalion
-            </label>
-            <div className="bg-secondaryBlue w-fit text-white rounded-md h-auto p-2 text-sm">
-              July 2023 – February 2024
-            </div>
-            <div>
-              <ul>
-                <li className="text-sm mb-1">
-                  • Creating and maintenance web applications such web-admin,
-                  web-monitoring, and landing page with ReactJs, NextJs, and
-                  Typescript
-                </li>
-                <li className="text-sm mb-1">
-                  • Collaborating with team Design and Backend developer to
-                  create applications
-                </li>
-                <li className="text-sm mb-1">
-                  • Creating a web application in a clean code
-                </li>
-              </ul>
-            </div>
-          </ContainerCard>
+          {model.dataUser?.experience?.map((item, index) => (
+            <ContainerCard className="w-fit" key={index}>
+              <label className="font-semibold text-xl">{item.company}</label>
+              <div className="bg-secondaryBlue w-fit text-white rounded-md h-auto p-2 text-sm">
+                {moment(item.startDate).format("MMMM YYYY")} -{" "}
+                {moment(item.endDate).format("MMMM YYYY")}
+              </div>
+              <div>
+                <ul>
+                  {item.listJobDetails?.map((job, index) => (
+                    <li className="text-sm mb-1" key={index}>
+                      • {job}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ContainerCard>
+          ))}
         </div>
         <div className="flex justify-end">
           <BlueCircle />
