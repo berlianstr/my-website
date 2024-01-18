@@ -59,6 +59,7 @@ export default function Contact() {
               placeholder="Enter your name..."
               label="Name"
               name="from_name"
+              required={true}
               // {...register("name", { required: true })}
               // required={true}
               // ref={nameRef as React.RefObject<HTMLInputElement>}
@@ -67,6 +68,7 @@ export default function Contact() {
               placeholder="Enter your email..."
               label="Email"
               name="email"
+              required={true}
               // {...register("email", { required: true })}
               // required={true}
             />
@@ -74,6 +76,7 @@ export default function Contact() {
               label="Message"
               placeholder="Enter message..."
               name="message"
+              required={true}
               // {...register("message", { required: true })}
               // required={true}
             />
