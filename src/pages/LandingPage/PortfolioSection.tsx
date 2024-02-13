@@ -2,9 +2,10 @@ import TextTitleSection from "@components/TextTitleSection";
 import radxImg from "@assets/images/png/radx.png";
 import filmImg from "@assets/images/png/film.png";
 import adiImg from "@assets/images/png/adi.png";
+import nextImg from "@assets/images/png/nxt-14.png";
 import Tag from "@components/Tag";
 import { Element } from "react-scroll";
-import useGlobalHooks from "@hooks/GlobalHooks";
+// import useGlobalHooks from "@hooks/GlobalHooks";
 import { motion } from "framer-motion";
 import ContainerCard from "@components/Cards/ContainerCard";
 import useLandingPageViewModel from "./LandingPageViewModel";
@@ -14,16 +15,16 @@ export default function PortfolioSection({
 }: {
   model: ReturnType<typeof useLandingPageViewModel>;
 }) {
-  const hooks = useGlobalHooks();
+  // const hooks = useGlobalHooks();
   return (
     <Element name="portfolio">
       <motion.div
-        style={{ scale: hooks.scaleProgress, opacity: hooks.opacityProgress }}
-        ref={hooks.ref}
+        // style={{ scale: hooks.scaleProgress, opacity: hooks.opacityProgress }}
+        // ref={hooks.ref}
         className="flex flex-col gap-[60px] lg:pb-[134pb] md:pb-20 pb-7"
       >
         <TextTitleSection title1="My" title2="Portfolio" />
-        <div className="flex md:flex-nowrap flex-wrap flex-grow gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
           <ContainerCard className="p-4">
             <img src={radxImg} className="w-fit" alt="radx" />
             <div>
@@ -122,6 +123,41 @@ export default function PortfolioSection({
               <div className="relative h-14 w-20">
                 <a
                   href=""
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Source
+                </a>
+              </div>
+            </div>
+          </ContainerCard>
+          <ContainerCard className="p-4">
+            <img src={nextImg} className="w-fit" alt="nxt" />
+            <div className="mt-2">
+              <label className="font-semibold text-textBlue">
+                Next 14 Blog CRUD
+              </label>
+              <p className="text-sm">
+                This is the website build with Next.js and Tailwind CSS. This
+                website allow to users to create, read, update, and delete the
+                blog.
+              </p>
+            </div>
+            <div className="flex flex-wrap mt-2 gap-2">
+              <Tag title="Next JS" />
+              <Tag title="Tailwind CSS" />
+            </div>
+            <div className="flex gap-3">
+              <div className="relative h-14 w-20">
+                <a
+                  href="https://next-14-blog-sigma.vercel.app/"
+                  className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
+                >
+                  Demo
+                </a>
+              </div>
+              <div className="relative h-14 w-20">
+                <a
+                  href="https://github.com/berlianstr/next-14-blog"
                   className="bg-secondaryBlue absolute bottom-0 left-0 h-10 w-auto flex items-center px-4 rounded-md text-white hover:opacity-80"
                 >
                   Source
